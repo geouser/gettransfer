@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Ceylan</title>
+        <title>Get Transfer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><!--[if IE]>
         <meta http-equiv="ImageResize" content="no">
         <meta http-equiv="ImageToolbar" content="no">
@@ -24,28 +24,36 @@
        
         <!--=================================================================================================-->
                                                     <!-- HEADER -->
-        <header class="mainHeader compensate-for-scrollbar">
+        <header class="header mainHeader compensate-for-scrollbar">
             <div class="wrapper">
+
+                <div class="header__left">
+                    <a href="index.html" class="logo"><img src="images/logo.svg" alt=""></a>
+                </div>
 
                 <nav class="mainNav"><!-- start navigation -->
                     <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">News</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="transfers.html" class="active">transfers</a></li>
+                        <li><a href="visa.html">visa</a></li>
+                        <li><a href="about.html">about service</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="contacts.html">contacts</a></li>
                     </ul>
                 </nav><!-- end nav -->
 
-                <div class="mainHeader__info">
-                    <a href="tel:+971 55 915 94 49" class="tel">+971 55 915 94 49</a>
-                    <a href="mailto:hello@law.com" class="mail">hello@law.com</a>
-                    <div class="social">
-                        <a href="" class="social__item"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                        <a href="" class="social__item"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="" class="social__item"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <div class="header__right">
+                    <div class="header__info" id="clock">
+                        <div><p class="unit" id="hours"></p>:<p class="unit" id="minutes"></p>:<p class="unit" id="seconds"></p></div>
                     </div>
-                </div><!-- end mainHeader__info -->
-
+                    <div class="languages header__info">
+                        <a><img src="images/usd.svg" alt=""><span>usd</span></a>
+                        <div class="languages__options">
+                            <a><img src="images/usd.svg" alt=""><span>usd</span></a>
+                            <a><img src="images/usd.svg" alt=""><span>usd</span></a>
+                        </div>
+                    </div>
+                </div>
+    
             </div><!-- end wrapper -->
         </header><!-- end header -->
         
@@ -58,25 +66,30 @@
 
         <!--=================================================================================================-->
                                                     <!-- OFFER SECTION -->
-        <section class="offer">
-            <div class="wrapper"><!-- start offerInfo -->
-                <h1>Hello, I'm Dreamkiller. Let's get started!</h1>
-                <button class="button fancybox" data-src="#modal-popup" href="javascript:;">Request a call</button>
-            </div><!-- end wrapper -->
-        </section><!-- end offer section --> 
-
-        <!-- 
-        <section class="offer--slider">
-            <div class="slide" style="background-image: url(images/offer-slide-1.jpg);">
-                <h2>“Example Slider”</h2>
-                <button class="button">Read more</button>
+        <section class="offer stroke" style="background-image: url(images/offer-main.jpg);">
+            <div class="wrapper">
+                <h1>Find and book online taxi transfers</h1>
+                <p>More than One Hundred online-bookings while Azerbaijan!</p>
+                <form action="" class="form-filter">
+                    <div class="form-filter__group radio-group">
+                        <label><input type="radio" name="number" value="Single" checked><i></i><span>Single</span></label>
+                        <label><input type="radio" name="number" value="Return"><i></i><span>Return</span></label>
+                    </div>
+                    <div class="form-filter__group location">
+                        <input type="text" name="" placeholder="From">
+                    </div>
+                    <div class="form-filter__group location">
+                        <input type="text" name="" placeholder="To">
+                    </div>
+                    <button type="submit"></button>
+                </form>
             </div>
-            <div class="slide" style="background-image: url(images/offer-slide-1.jpg);">
-                <h2>“Rays Group”</h2>
-                <button class="button">Read more</button>
+            <div class="offer--slider">
+                <div class="slide" style="background-image: url(images/offer-main.jpg);"></div>
+                <div class="slide" style="background-image: url(images/offer-main.jpg);"></div>
+                <div class="slide" style="background-image: url(images/offer-main.jpg);"></div>
             </div>
         </section>
-        -->
 
 
   	    <!-- //////////////////////////////////////////////////////////////////////// -->

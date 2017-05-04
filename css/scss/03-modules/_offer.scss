@@ -1,6 +1,7 @@
 .offer {
-    height: 800px;
+    height: 620px;
     max-height: 100%;
+    position: relative;
     @include flex($direction: column, $alignI: center, $justify: center);
     
     background-image: url("../images/offer-main.jpg");
@@ -10,16 +11,44 @@
             background-size: cover;
     
     h1 {
-        margin-bottom: 40px;
-        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 40px;
+        color: #ffffff;
+        font-family: $rds;
+        font-weight: 400;
+    }
+    p {
+        font-size: 16px;
+        font-family: $hn;
+        color: #FFF;
+    }
+    form {
+        margin-top: 50px;
+    }
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        left:0;
+        bottom:0;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+    .wrapper {
+        position: relative;
+        z-index: 2;
     }
 }
 
-/*
+
 .offer--slider {
-    height: 590px;
-    position: relative;
-    background: #3D8EB9;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
     @media (max-width: 600px) {
         height: 500px;
     }
@@ -63,4 +92,18 @@
         }
     }
 }
-*/
+
+.stroke {
+    position: relative;
+    &:before {
+        content: "";
+        z-index: 3;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-repeat: repeat;
+        background-image: url("../images/stroke.png");
+    }
+}

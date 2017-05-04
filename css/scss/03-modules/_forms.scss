@@ -1,0 +1,90 @@
+.form-filter {
+    overflow: hidden;
+    border-radius: 2px;
+    @include flex($wrap:no-wrap, $justify: center);
+    &__group {
+        @include flex($justify: flex-start);
+        height: 60px;
+        width: 280px;
+        background-color: #FFF;
+        padding: 0 20px 0 50px;
+        border-right: 1px solid #eeeeee;
+        input {
+            width: 100%;
+            padding-left: 2px;
+        }
+        &:first-of-type {
+            border-radius: 2px 0 0 2px;
+        }
+        &.location {
+            background-repeat: no-repeat;
+            background-image: url("../images/location-sign.svg");
+            background-position: 20px 50%;
+        }
+    }
+    .radio-group {
+        padding-left: 20px;
+        label {
+            margin-right: 40px;
+            cursor: pointer;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            input {
+                width: 0;
+                height: 0;
+                visibility: hidden;
+                &:checked {
+                    & + i {
+                        border-color: $yellow;
+                        &:after {
+                            width: 6px;
+                            height: 6px;
+                            display: block;
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            margin: auto;
+                            background: $yellow;
+                            -webkit-border-radius: 50%;
+                                    border-radius: 50%;
+                        }
+                    }
+                }
+            }
+            i { 
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 12px;
+                height: 18px;
+                width: 18px;
+                border: 1px solid #c9d4d6;
+                -webkit-border-radius: 50%;
+                        border-radius: 50%;
+            }
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    input,
+    label {
+        font-size: 15px;
+        font-family: $hn;
+        font-weight: 400;
+        color: #222222;
+        border: none;
+    }
+    button {
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 0 2px 2px 0;
+        background: $yellow url('../images/submit.svg') no-repeat center center;
+    }
+}
