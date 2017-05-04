@@ -87,5 +87,9 @@
         border: none;
         border-radius: 0 2px 2px 0;
         background: $yellow url('../images/submit.svg') no-repeat center center;
+        @include transition(all, .2s);
+        &:hover {
+            background-color: #F59700;
+        }
     }
 }
