@@ -1,9 +1,10 @@
 .car-slider {
-    margin-top: 120px;
+    margin-top: 80px;
 }
 .car-slide {
     opacity: 1;
     margin-bottom: 130px;
+    padding-top: 40px;
     .wrapper {
         @include flex();
         position: relative;
@@ -11,14 +12,15 @@
     .car-cat {
         position: absolute;
         line-height: .9;
-        top: 0;
-        left: 30%;
+        top: -40px;
+        left: 40%;
         opacity: 0;
-        -webkit-transition: .6s all .0s ease-out;
-           -moz-transition: .6s all .0s ease-out;
-            -ms-transition: .6s all .0s ease-out;
-             -o-transition: .6s all .0s ease-out;
-                transition: .6s all .0s ease-out;
+        font-family: $din;
+        -webkit-transition: .4s transform .0s, .2s opacity;
+           -moz-transition: .4s transform .0s, .2s opacity;
+            -ms-transition: .4s transform .0s, .2s opacity;
+             -o-transition: .4s transform .0s, .2s opacity;
+                transition: .4s transform .0s, .2s opacity;
     }
     .car-img {
         opacity: 0;
@@ -54,8 +56,13 @@
                     transform: translateX(0);
         }
         .car-cat {
-            left: 10%;
+            left: 20%;
             opacity: 1;
+            -webkit-transition: .6s all .2s ease-out;
+           -moz-transition: .6s all .2s ease-out;
+            -ms-transition: .6s all .2s ease-out;
+             -o-transition: .6s all .2s ease-out;
+                transition: .6s all .2s ease-out;
         }
         & + .slick-slider {
             .car-img {

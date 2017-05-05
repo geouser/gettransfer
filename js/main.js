@@ -81,7 +81,7 @@ jQuery(document).ready(function($) {
       arrows: false,
       fade: true,
       asNavFor: '.car-slider-nav',
-      speed: 700
+      speed: 900
     });
 
     $('.car-slider-nav').slick({
