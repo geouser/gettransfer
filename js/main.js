@@ -75,6 +75,23 @@ jQuery(document).ready(function($) {
         arrows: false
     });
 
+    $('.car-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.car-slider-nav'
+    });
+
+    $('.car-slider-nav').slick({
+      slidesToShow: 8,
+      slidesToScroll: 1,
+      asNavFor: '.car-slider',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+    });
+
 
     /*_______ change from/to values __________*/
     $('#exchange').click(function(){
