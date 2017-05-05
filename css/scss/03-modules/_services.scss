@@ -1,0 +1,25 @@
+.services-list {
+    .col-3 {
+        padding: 0 10px;
+    }
+}
+.services-preview {
+    height: 160px;
+    padding: 20px;
+    position: relative;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    span {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: #FFF;
+        font-size: 25px;
+        font-family: $f;
+        text-transform: uppercase;
+        line-height: .9;
+    }
+}

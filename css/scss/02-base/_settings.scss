@@ -10,6 +10,27 @@ body {
   font-family: $hn;
 }
 
+.section-title {
+  h2,
+  h1 {
+    color: $blue;
+    font-size: 40px;
+    font-family: $rds;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 16px;
+    color: $text;
+  }
+  &.yellow {
+    h2,
+    h1 {
+      color: $yellow;
+    }
+  }
+}
 
 // lAYOUT
 // ---------------------------
@@ -21,6 +42,13 @@ body {
 	text-align: center;
 }
 
+.section {
+  padding: 60px 0;
+}
+
+.bg-color {
+  background-color: #f7fafd;
+}
 
 .flex-row {
     @include flex($alignI: flex-start, $justify: flex-start);

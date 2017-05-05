@@ -9,6 +9,7 @@
         background-color: #FFF;
         padding: 0 20px 0 50px;
         border-right: 1px solid #eeeeee;
+        position: relative;
         input {
             width: 100%;
             padding-left: 2px;
@@ -91,5 +92,32 @@
         &:hover {
             background-color: #F59700;
         }
+    }
+}
+
+#exchange {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 2;
+    right: -12px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    @include transition(all, .2s);
+    background-image: url("../images/exchange.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+         -o-background-size: 100% 100%;
+            background-size: 100% 100%;
+    &.return {
+        -webkit-transform: rotate(180deg);
+           -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+             -o-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
 }

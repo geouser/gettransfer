@@ -51,27 +51,6 @@ jQuery(document).ready(function($) {
     });
 
     /*---------------------------
-                                ACTIVATE MENU ITEM OVER CURRENT SECTION
-    ---------------------------*/
-    var $sections = $('section');
-    $(window).scroll(function(){
-        var currentScroll = $(this).scrollTop();
-        var $currentSection;
-        var windowHalf = $(window).height() / 2;
-        
-        $sections.each(function(){
-          var divPosition = $(this).offset().top - windowHalf;
-          
-          if( divPosition - 1 < currentScroll ){
-            $currentSection = $(this);
-          }
-        var id = $currentSection.attr('id');
-          $('a').removeClass('active');
-          $("[href=#"+id+"]").addClass('active');
-        })
-    });
-
-    /*---------------------------
                                   MENU TOGGLE
     ---------------------------*/
     $('.menu-button').on('click', function(event) {
@@ -86,6 +65,7 @@ jQuery(document).ready(function($) {
     });
 
 
+    /*_______ sliders __________*/
     $('.offer--slider').slick({
         autoplay: true,
         fade: true,
@@ -95,6 +75,19 @@ jQuery(document).ready(function($) {
         arrows: false
     });
 
+
+    /*_______ change from/to values __________*/
+    $('#exchange').click(function(){
+        $(this).toggleClass('return');
+        var el1 = $('#val-1');
+        var val1 = el1.val();
+
+        var el2 = $('#val-2');
+        var val2 = el2.val();
+
+        el1.val(val2);
+        el2.val(val1);
+    });
 
     /*---------------------------
                                   Fancybox
