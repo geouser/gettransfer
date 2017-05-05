@@ -1,0 +1,115 @@
+.advantages {
+    height: 840px;
+    padding-top: 240px;
+    counter-reset: advantage-item;
+    position: relative;
+
+    .list {
+        height: 100%;
+    }
+
+    .first-column {
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .last-column {
+        -webkit-order: 3;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .middle-column {
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+    }
+
+
+
+    .adv-1 {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .adv-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .adv-3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+.advantage-item {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    max-width: 100%;
+    position: relative;
+
+    &:after {
+        counter-increment: advantage-item;
+        content: counter(advantage-item);
+        position: absolute;
+        font-family: $rds;
+        font-size: 250px;
+        color: #f7fafd;
+        left: 50%;
+        top: -190px;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    &__icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: relative;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        display: block;
+        margin: 0 auto 40px;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__title {
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: $f;
+        color: $orange;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        line-height: 22px;
+        color: $grey;
+    }
+}
