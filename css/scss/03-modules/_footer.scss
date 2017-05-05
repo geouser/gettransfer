@@ -2,6 +2,10 @@
     background-color: $grey;
     color: #555555;
 
+    &:before {
+        opacity: .4;
+    }
+
 
     &__top {
         padding: 60px 0 35px;
