@@ -76,6 +76,8 @@
 
 .car-info {
     width: 340px;
+    position: relative;
+    z-index: 2;
     ul {
         background-color: #3498db;
         padding: 35px 20px;

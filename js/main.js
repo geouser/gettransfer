@@ -80,15 +80,16 @@ jQuery(document).ready(function($) {
       slidesToScroll: 1,
       arrows: false,
       fade: true,
-      asNavFor: '.car-slider-nav'
+      asNavFor: '.car-slider-nav',
+      speed: 700
     });
 
     $('.car-slider-nav').slick({
       slidesToShow: 8,
       slidesToScroll: 1,
       asNavFor: '.car-slider',
-      dots: true,
-      centerMode: true,
+      dots: false,
+      centerMode: false,
       focusOnSelect: true
     });
 
