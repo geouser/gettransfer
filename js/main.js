@@ -251,7 +251,7 @@ jQuery(document).ready(function($) {
 
       $hOut.text(hours);
       $mOut.text(minutes);
-      $sOut.text(seconds);
+      $sOut.text(seconds).css('animation-name', 'pulse');
     } 
 
     update();

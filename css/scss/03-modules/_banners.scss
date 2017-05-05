@@ -1,0 +1,42 @@
+.banner-info {
+    @include flex($direction: column, $alignI: center, $justify: center);
+    height: 620px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    color: #FFF;
+    &-piece {
+        text-align: left;
+        display: inline-block;
+        strong {
+            display: block;
+            font: 70px $rds;
+            line-height: 1;
+        }
+        span {
+            display: block;
+            font-size: 25px;
+            font-family: $f;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+    .col-3 {
+        text-align: center;
+    }
+    .col-3:nth-of-type(1) {
+        text-align: left;
+    }
+    .col-3:nth-of-type(4) {
+        text-align: right;
+    }
+}
+
+.devider-small {
+    height: 1px;
+    border: none;
+    background: #FFF;
+    width: 70px;
+    margin: 20px 0;
+}
