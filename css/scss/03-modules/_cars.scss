@@ -25,11 +25,11 @@
         padding-top: 70px;
         position: relative;
         z-index: 2;
-        -webkit-transition: .6s transform 0s, 1s opacity .4s;
-           -moz-transition: .6s transform 0s, 1s opacity .4s;
-            -ms-transition: .6s translform 0s, 1s opacity .4s;
-             -o-transition: .6s transform 0s, 1s opacity .4s;
-                transition: .6s transform 0s, 1s opacity .4s;
+        -webkit-transition: .4s transform 0s, .4s opacity 0s;
+           -moz-transition: .4s transform 0s, .4s opacity 0s;
+            -ms-transition: .4s translform 0s, .4s opacity 0s;
+             -o-transition: .4s transform 0s, .4s opacity 0s;
+                transition: .4s transform 0s, .4s opacity 0s;
         -webkit-transform: translateX(-100%);
            -moz-transform: translateX(-100%);
             -ms-transform: translateX(-100%);
@@ -41,11 +41,11 @@
     }
     &.slick-current {
         .car-img {
-        -webkit-transition: .6s transform .2s ease-out, .6s opacity .0s;
-           -moz-transition: .6s transform .2s ease-out, .6s opacity .0s;
-            -ms-transition: .6s translform .2s ease-out, .6s opacity .0s;
-             -o-transition: .6s transform .2s ease-out, .6s opacity .0s;
-                transition: .6s transform .2s ease-out, .6s opacity .0s;
+        -webkit-transition: .6s transform .2s ease-out, .6s opacity .2s;
+           -moz-transition: .6s transform .2s ease-out, .6s opacity .2s;
+            -ms-transition: .6s translform .2s ease-out, .6s opacity .2s;
+             -o-transition: .6s transform .2s ease-out, .6s opacity .2s;
+                transition: .6s transform .2s ease-out, .6s opacity .2s;
             opacity: 1;
             -webkit-transform: translateX(0);
                -moz-transform: translateX(0);
