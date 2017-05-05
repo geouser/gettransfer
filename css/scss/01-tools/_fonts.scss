@@ -54,3 +54,15 @@
     font-weight: bold;
     font-style: normal;
 }
+
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('../fonts/PFDinTextCompPro-Regular.eot');
+    src: url('../fonts/PFDinTextCompPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PFDinTextCompPro-Regular.woff') format('woff'),
+        url('../fonts/PFDinTextCompPro-Regular.ttf') format('truetype'),
+        url('../fonts/PFDinTextCompPro-Regular.svg#PFDinTextCompPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
