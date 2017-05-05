@@ -10,13 +10,20 @@
         height: 100%;
         @include flex();
     }
+}
 
+.header {
     &__left,
     &__right {
         width: 300px;
     }
+    &__left {
+        text-align: left;
+    }
+    &__right {
+        text-align: right;
+    }
 }
-
 
 .header__info {
     display: inline-block;
