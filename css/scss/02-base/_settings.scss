@@ -33,6 +33,12 @@ body {
   }
 }
 
+.bordered-block {
+  border: 10px solid #fff;
+  background-color: #fff;
+  box-shadow: 0 0 15px #e9eef3;
+}
+
 // lAYOUT
 // ---------------------------
 .wrapper {
@@ -55,7 +61,7 @@ body {
 
 .flex-row {
     @include flex($alignI: flex-start, $justify: flex-start);
-    margin: 0 -20px;
+    margin: 0 -10px;
 
     &.flex-row-middle {
         -webkit-align-items: center;
@@ -64,7 +70,7 @@ body {
     }
 }
 [class*='col-'] {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .col-1  { width: 8.33%; }

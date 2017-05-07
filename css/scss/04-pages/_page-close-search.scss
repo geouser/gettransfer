@@ -1,0 +1,158 @@
+.contact-form {
+    margin-top: 20px;
+
+    & > .flex-row {
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+
+    &__image-column {
+        position: relative;
+
+        .bg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            left: 10px;
+            right: 10px;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+.question-form {
+    padding: 45px 40px 65px 10px;
+    position: relative;
+
+    .form-group {
+        position: relative;
+        margin-bottom: 50px;
+
+        label {
+            position: absolute;
+            top: 22.5px;
+            left: 0;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            font-family: $os;
+            font-size: 15px;
+            font-weight: 400;
+            color: #888888;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+
+        &.focus {
+            label {
+                -webkit-transform: translateY(-100%);
+                -ms-transform: translateY(-100%);
+                -o-transform: translateY(-100%);
+                transform: translateY(-100%);
+                font-size: 12px;
+                top: 0;
+            }
+        }
+
+        &.textarea-group {
+            margin-bottom: 0;
+            padding-right: 110px;
+        }
+    }
+
+    input,
+    textarea {
+        height: 45px;
+        border: 0;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+        display: block;
+        width: 100%;
+        color: $grey;
+        font-family: $os;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    textarea {
+        resize: none;
+        padding-top: 9px;
+        height: 200px;
+    }
+
+
+    .submit-button {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        width: 70px;
+        height: 70px;
+        border: 0;
+        background-color: $orange;
+        border-radius: 50%;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &:hover {
+            background-color: $orange-hover;
+        }
+    }
+}
+
+
+
+.map-block {
+
+    & > .flex-row {
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+
+    .map {
+        height: 440px;
+
+        .gm-style a img,
+        .gmnoprint a,
+        .gmnoprint a + span,
+        .gm-style-cc {
+            display: none!important;
+        }
+    }
+
+
+    .image-column {
+        position: relative;
+
+        .bg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            left: 10px;
+            right: 10px;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .map-column {
+        padding-right: 0;
+    }
+}

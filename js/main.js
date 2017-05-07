@@ -26,6 +26,28 @@ function exist(el){
 jQuery(document).ready(function($) {
 
     /*---------------------------
+                              CONTACTS FORM
+    ---------------------------*/
+    $('input, textarea').each(function(index, el) {
+        if ( !$(this).val() ) {
+            $(this).parent().removeClass('focus');
+        } else {
+            $(this).parent().addClass('focus');
+        }
+    });
+    $('input, textarea').on('focusin', function(event) {
+        event.preventDefault();
+        $(this).parent().addClass('focus');
+    });
+    $('input, textarea').on('focusout', function(event) {
+        event.preventDefault();
+        if ( !$(this).val() ) {
+            $(this).parent().removeClass('focus');
+        }
+    });
+
+
+    /*---------------------------
                                   ADD CLASS ON SCROLL
     ---------------------------*/
     $(function() { 
@@ -177,33 +199,20 @@ jQuery(document).ready(function($) {
         var lat = $('#map_canvas').data('lat');
         var long = $('#map_canvas').data('lng');
 
-        var mapCenterCoord = new google.maps.LatLng(lat, long+0.002);
+        var mapCenterCoord = new google.maps.LatLng(lat, long);
         var mapMarkerCoord = new google.maps.LatLng(lat, long);
-        if ( $(window).width() <= 1000 ) {
-            mapCenterCoord = new google.maps.LatLng(lat, long);
-            mapMarkerCoord = new google.maps.LatLng(lat, long);
-        }
-        $(window).resize(function(event) {
-            if ( $(window).width() <= 1000 ) {
-                mapCenterCoord = new google.maps.LatLng(lat, long);
-                mapMarkerCoord = new google.maps.LatLng(lat, long);
-            } else {
-                mapCenterCoord = new google.maps.LatLng(lat, long+0.002);
-                mapMarkerCoord = new google.maps.LatLng(lat, long);
-            }
-        });
 
         var mapOptions = {
             center: mapCenterCoord,
-            zoom: 17,
+            zoom: 15,
             //draggable: false,
-            disableDefaultUI: true,
+            disableDefaultUI: false,
             scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
         map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-        var markerImage = new google.maps.MarkerImage('images/location.png');
+        var markerImage = new google.maps.MarkerImage('images/location.svg');
         var marker = new google.maps.Marker({
             icon: markerImage,
             position: mapMarkerCoord, 
