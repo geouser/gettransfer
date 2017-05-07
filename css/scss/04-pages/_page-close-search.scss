@@ -156,3 +156,22 @@
         padding-right: 0;
     }
 }
+
+
+
+.contact-info-row {
+    padding: 38px 0 39px;
+    background-color: $blue;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font-family: $f;
+    font-size: 20px;
+    font-weight: 500;
+
+    img,
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
