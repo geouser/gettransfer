@@ -124,7 +124,6 @@
 
 
 
-
 .regular-form {
     .form-group {
         margin-bottom: 40px;
@@ -177,17 +176,7 @@
 
                 &:before {
                     content: '';
-                    width: 18px;
-                    height: 18px;
-                    background-color: #fff;
-                    -webkit-box-shadow: 0px 0px 0px 1px rgba(2,165,225,1);
-                    -moz-box-shadow: 0px 0px 0px 1px rgba(2,165,225,1);
-                    box-shadow: 0px 0px 0px 1px rgba(2,165,225,1);
-                    border: 5px solid #fff;
-                    display: inline-block;
-                    vertical-align: middle;
-                    box-sizing: border-box;
-                    border-radius: 50%;
+                    @include radio();
                     margin-right: 10px;
                     position: absolute;
                     left: -40px;
@@ -224,18 +213,7 @@
             input[type="email"],
             input[type="tel"],
             textarea {
-                width: 100%;
-                display: block;
-                height: 100%;
-                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
-                border-radius: 2px 0 0 2px;
-                background-color: #f8f8f8;
-                border: 0;
-                padding: 0 20px;
-                font-family: $hn;
-                font-size: 15px;
-                font-weight: 400;
-                color: #222;
+                @include input();
 
                 &::-webkit-input-placeholder {
                   color: #888;
@@ -318,6 +296,85 @@
             }
 
 
+            &.radio {
+                text-align: center;
+                line-height: 62px;
+                @include flex($alignI: center, $justify: center);
+
+                input[type="radio"] {
+                    display: none;
+                }
+
+                > span {
+                    padding: 0 30px;
+                }
+
+                label {
+                    cursor: pointer;
+                    font-family: $hn;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #222;
+
+                    &:before {
+                        content: '';
+                        @include radio();
+                        box-shadow: 0px 0px 0px 1px $orange;
+                    }
+
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+
+                input:checked + label:before {
+                    background-color: $orange;
+                }
+            }
+
+
+            &.file {
+                &:after {
+                    content: '';
+                    width: 24px;
+                    height: 22px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-image: url(../images/input-file.svg);
+                    position: absolute;
+                    top: 50%;
+                    right: 25px;
+                    -webkit-transform: translate(50%, -50%);
+                    -ms-transform: translate(50%, -50%);
+                    -o-transform: translate(50%, -50%);
+                    transform: translate(50%, -50%);
+                }
+                input[type="file"] {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    opacity: 0;
+                    cursor: pointer;
+
+                    &::-webkit-file-upload-button {
+                        cursor: pointer;
+                    }
+                }
+
+                span {
+                    @include input();
+                    line-height: 62px;
+                    padding-right: 50px;
+                    color: #888;
+                }
+            }
+
+
             &.type-number {
                 &:after {
                     content: '';
@@ -382,6 +439,10 @@
 
         &.button-group {
             text-align: right;
+
+            &.align-center {
+                text-align: center;
+            }
         }
     }
 
@@ -392,6 +453,32 @@
         font-style: italic;
         margin-bottom: 40px;
         margin-top: -28px;
+
+        a {
+            color: $blue;
+            font-style: normal;
+            text-decoration: underline;
+        }
+    }
+
+    .total-agreedment {
+        text-align: center;
+
+        .input {
+            height: auto!important;
+            line-height: normal!important;
+        }
+
+        label {
+            font-size: 15px!important;
+            font-weight: 400!important;
+            color: #222!important;
+
+            a {
+                color: inherit;
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -452,18 +539,7 @@
 
         &:before {
             content: '';
-            width: 18px;
-            height: 18px;
-            background-color: #fff;
-            -webkit-box-shadow: 0px 0px 0px 1px rgba(2,165,225,1);
-            -moz-box-shadow: 0px 0px 0px 1px rgba(2,165,225,1);
-            box-shadow: 0px 0px 0px 1px rgba(2,165,225,1);
-            border: 5px solid #fff;
-            display: inline-block;
-            vertical-align: middle;
-            box-sizing: border-box;
-            border-radius: 50%;
-            margin-right: 10px;
+            @include radio();
         }
 
         span {

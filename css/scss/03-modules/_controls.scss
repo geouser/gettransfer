@@ -21,6 +21,15 @@
     &:hover {
         background-color: $orange-hover;
     }
+
+
+    &--blue {
+        background-color: $blue;
+
+        &:hover {
+            background-color: $blue-hover;
+        }
+    }
 }
 
 /* ------------------------------------ */

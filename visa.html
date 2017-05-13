@@ -73,66 +73,127 @@
                     <div class="flex-row flex-row-stretch"> 
 
                         <div class="form-section">
-                            <div class="form-section__header">Enter transfer details</div> <!-- end form-section_header -->
+                            <div class="form-section__header">Fill Application Form</div> <!-- end form-section_header -->
 
                             <div class="form-section__body">
                                 <div class="flex-row flex-row-bottom">
-                                    <div class="col-6 form-group-column">
+                                    <div class="col-4 form-group-column">
                                         <div class="form-group">
-                                            <p class="label">Pick up address:</p>
-                                            <span class="input has-icon">
-                                                <img src="images/input-address.svg" alt="">
-                                                <input type="text" name="city-start" placeholder="From:">
+                                            <p class="label">Country / Region</p>
+                                            <span class="input type-number">
+                                                <input type="text" name="country-refion" placeholder="Country">
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="col-6 form-group-column">
+                                    <div class="col-4 form-group-column">
                                         <div class="form-group">
-                                            <span class="input has-icon">
-                                                <img src="images/input-address.svg" alt="">
-                                                <input type="text" name="city-start" placeholder="To:">
+                                            <p class="label">Travel document</p>
+                                            <span class="input">
+                                                <input type="text" name="travel-document" placeholder="Document">
                                             </span>
                                         </div>
+                                    </div>
+                                    <div class="col-4 form-group-column">
+                                        <div class="form-group">
+                                            <span class="input radio">
+                                                <span>
+                                                    <input type="radio" name="sex" value="Male" id="male">
+                                                    <label for="male"><span>Male</span></label>
+                                                </span>
+                                                <span>
+                                                    <input type="radio" name="sex" value="Female" id="female">
+                                                    <label for="female"><span>Female</span></label>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Name</p>
+                                            <span class="input">
+                                                <input type="text" name="name" placeholder="Name">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Surname</p>
+                                            <span class="input">
+                                                <input type="text" name="surname" placeholder="Surname">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Place of birth</p>
+                                            <span class="input type-number">
+                                                <input type="text" name="place-of-birth" placeholder="Place of birth">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Residence address</p>
+                                            <span class="input">
+                                                <input type="text" name="residence-address" placeholder="Residence address">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">E-mail</p>
+                                            <span class="input">
+                                                <input type="email" name="email" placeholder="email@gmail.com">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Phone number</p>
+                                            <span class="input">
+                                                <input type="number" name="phone" placeholder="+944">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Copy of the passport</p>
+                                            <span class="input file">
+                                                <span class="placeholder" data-label="Select file">Select file</span>
+                                                <input type="file" name="passport-copy" accept=".jpg,.jpeg,.png,.bmp,.pdf">
+                                            </span>
+                                        </div>
+                                        <p class="tip"><a href="#">Example of a copy of a travel document</a></p>
+                                    </div>
+                                    <div class="col-4 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Date of arrival in country</p>
+                                            <span class="input type-number">
+                                                <input type="text" name="date" placeholder="Date" class="datepicker">
+                                            </span>
+                                        </div>
+                                        <p class="tip empty">&nbsp;</p>
+                                    </div>
+                                    <div class="col-4 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Residence address</p>
+                                            <span class="input">
+                                                <input type="text" name="residence-address-2" placeholder="Residence address">
+                                            </span>
+                                        </div>
+                                        <p class="tip empty">&nbsp;</p>
                                     </div>
                                     <div class="col-12 form-group-column">
-                                        <p class="tip">Pickup address (hotel name or address within city)</p>
-                                    </div>
-                                    <div class="col-6 form-group-column">
-                                        <div class="form-group">
-                                            <p class="label">Pick up time:</p>
-                                            <span class="input has-icon">
-                                                <img src="images/input-calendar.svg" alt="">
-                                                <input type="text" name="date" placeholder="Date:" class="datepicker">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 form-group-column">
-                                        <div class="form-group">
-                                            <span class="input has-icon">
-                                                <img src="images/input-time.svg" alt="">
-                                                <input type="text" name="time" placeholder="hh:mm">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 form-group-column">
-                                        <p class="tip">Local time in 24 hour format. Travel time approximately 30 min.</p>
-                                    </div>
-                                    <div class="col-6 form-group-column">
-                                        <div class="form-group">
-                                            <p class="label">Want to come back?</p>
+                                        <div class="form-group total-agreedment">
                                             <span class="input checkbox">
-                                                <input type="checkbox" id="return-back" name="return-back" value="true">
-                                                <label for="return-back"><span>add return way</span></label>
+                                                <input type="checkbox" id="agree" name="agree" value="true">
+                                                <label for="agree"><span>I agree with <a href="#">Terms & Conditions</a></span></label>
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="col-6 form-group-column">
-                                        <div class="form-group">
-                                            <p class="label">Number of passengers (including children):</p>
-                                            <span class="input has-icon type-number">
-                                                <img src="images/input-seat.svg" alt="">
-                                                <input type="number" name="passangers" placeholder="Number of passangers:">
-                                            </span>
+                                    <div class="col-12 form-group-column">
+                                        <div class="form-group button-group align-center">
+                                            <button class="button button--blue">Continue</button>
                                         </div>
                                     </div>
                                 </div>
