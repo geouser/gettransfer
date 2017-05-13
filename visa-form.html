@@ -81,7 +81,15 @@
                                         <div class="form-group">
                                             <p class="label">Country / Region</p>
                                             <span class="input type-number">
-                                                <input type="text" name="country-refion" placeholder="Country">
+                                                <select name="country-region" id="" placeholder="Country" required="">
+                                                    <option value="" disabled selected>Select country:</option>
+                                                    <option value="Azerbaijan">Azerbaijan</option>
+                                                    <option value="Azerbaijan">Albania</option>
+                                                    <option value="Azerbaijan">Argentina</option>
+                                                    <option value="Azerbaijan">Algire</option>
+                                                    <option value="Azerbaijan">Austria</option>
+                                                    <option value="Azerbaijan">Australia</option>
+                                                </select>
                                             </span>
                                         </div>
                                     </div>
@@ -89,7 +97,7 @@
                                         <div class="form-group">
                                             <p class="label">Travel document</p>
                                             <span class="input">
-                                                <input type="text" name="travel-document" placeholder="Document">
+                                                <input type="text" name="travel-document" placeholder="Document" required="">
                                             </span>
                                         </div>
                                     </div>
@@ -97,7 +105,7 @@
                                         <div class="form-group">
                                             <span class="input radio">
                                                 <span>
-                                                    <input type="radio" name="sex" value="Male" id="male">
+                                                    <input type="radio" name="sex" value="Male" id="male" checked="">
                                                     <label for="male"><span>Male</span></label>
                                                 </span>
                                                 <span>
@@ -111,7 +119,7 @@
                                         <div class="form-group">
                                             <p class="label">Name</p>
                                             <span class="input">
-                                                <input type="text" name="name" placeholder="Name">
+                                                <input type="text" name="name" placeholder="Name" required="">
                                             </span>
                                         </div>
                                     </div>
@@ -119,7 +127,7 @@
                                         <div class="form-group">
                                             <p class="label">Surname</p>
                                             <span class="input">
-                                                <input type="text" name="surname" placeholder="Surname">
+                                                <input type="text" name="surname" placeholder="Surname" required="">
                                             </span>
                                         </div>
                                     </div>
@@ -127,7 +135,15 @@
                                         <div class="form-group">
                                             <p class="label">Place of birth</p>
                                             <span class="input type-number">
-                                                <input type="text" name="place-of-birth" placeholder="Place of birth">
+                                                <select name="place-of-birth" id="" required="">
+                                                    <option value="" disabled selected>Select place:</option>
+                                                    <option value="Azerbaijan">Azerbaijan</option>
+                                                    <option value="Azerbaijan">Albania</option>
+                                                    <option value="Azerbaijan">Argentina</option>
+                                                    <option value="Azerbaijan">Algire</option>
+                                                    <option value="Azerbaijan">Austria</option>
+                                                    <option value="Azerbaijan">Australia</option>
+                                                </select>
                                             </span>
                                         </div>
                                     </div>
@@ -135,7 +151,7 @@
                                         <div class="form-group">
                                             <p class="label">Residence address</p>
                                             <span class="input">
-                                                <input type="text" name="residence-address" placeholder="Residence address">
+                                                <input type="text" name="residence-address" placeholder="Residence address" required="">
                                             </span>
                                         </div>
                                     </div>
@@ -143,7 +159,7 @@
                                         <div class="form-group">
                                             <p class="label">E-mail</p>
                                             <span class="input">
-                                                <input type="email" name="email" placeholder="email@gmail.com">
+                                                <input type="email" name="email" placeholder="email@gmail.com" required="">
                                             </span>
                                         </div>
                                     </div>
@@ -151,7 +167,7 @@
                                         <div class="form-group">
                                             <p class="label">Phone number</p>
                                             <span class="input">
-                                                <input type="number" name="phone" placeholder="+944">
+                                                <input type="number" name="phone" placeholder="+944" required="">
                                             </span>
                                         </div>
                                     </div>
@@ -160,7 +176,7 @@
                                             <p class="label">Copy of the passport</p>
                                             <span class="input file">
                                                 <span class="placeholder" data-label="Select file">Select file</span>
-                                                <input type="file" name="passport-copy" accept=".jpg,.jpeg,.png,.bmp,.pdf">
+                                                <input type="file" name="passport-copy" accept=".jpg,.jpeg,.png,.bmp,.pdf" required="">
                                             </span>
                                         </div>
                                         <p class="tip"><a href="#">Example of a copy of a travel document</a></p>
@@ -169,7 +185,7 @@
                                         <div class="form-group">
                                             <p class="label">Date of arrival in country</p>
                                             <span class="input type-number">
-                                                <input type="text" name="date" placeholder="Date" class="datepicker">
+                                                <input type="text" name="date" placeholder="Date" class="datepicker" required="">
                                             </span>
                                         </div>
                                         <p class="tip empty">&nbsp;</p>
@@ -178,7 +194,7 @@
                                         <div class="form-group">
                                             <p class="label">Residence address</p>
                                             <span class="input">
-                                                <input type="text" name="residence-address-2" placeholder="Residence address">
+                                                <input type="text" name="residence-address-2" placeholder="Residence address" required="">
                                             </span>
                                         </div>
                                         <p class="tip empty">&nbsp;</p>
@@ -186,7 +202,7 @@
                                     <div class="col-12 form-group-column">
                                         <div class="form-group total-agreedment">
                                             <span class="input checkbox">
-                                                <input type="checkbox" id="agree" name="agree" value="true">
+                                                <input type="checkbox" id="agree" name="agree" value="true" required="">
                                                 <label for="agree"><span>I agree with <a href="#">Terms & Conditions</a></span></label>
                                             </span>
                                         </div>
