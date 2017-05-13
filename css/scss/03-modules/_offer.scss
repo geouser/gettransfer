@@ -80,6 +80,25 @@
     }
 }
 
+.search-button {
+    &:before {
+        width: 20px;
+        height: 20px;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+        background: url('../images/search.svg') no-repeat 100% 100%;
+        background-size: cover;
+    }
+    &.active {
+        &:before {
+            background: url('../images/close.svg') no-repeat 100% 100%;
+            background-size: cover;
+        }
+    }
+}
+
 
 .offer--slider {
     height: 100%;
