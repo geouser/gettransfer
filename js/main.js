@@ -79,8 +79,8 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $(this).parent().toggleClass('expanded');
 
-        $('.faq__item').not( $(this).parents() ).removeClass('expanded');
-        $('.faq__item').not( $(this).parents() ).find('.faq__item__content').slideUp();
+        $('.faq__item').not( $(this).parent() ).removeClass('expanded');
+        $('.faq__item').not( $(this).parent() ).find('.faq__item__content').slideUp();
         $(this).siblings('.faq__item__content').slideToggle();
     });
 
@@ -168,6 +168,57 @@ jQuery(document).ready(function($) {
       centerMode: false,
       focusOnSelect: true
     });
+
+
+
+    $('.photo-slider').on('init', function(event, slick) {
+        event.preventDefault();
+        $('.progress .total').text(slick.slideCount)
+    });
+
+    $('.photo-slider').on('afterChange', function(event, slick, currentSlide) {
+        event.preventDefault();
+        $('.progress .current').text(currentSlide + 1)
+    });
+
+    $('.photo-slider').slick({
+        arrows: false,
+        dots: false
+    })
+
+    $('.js-slick-prev').on('click', function(event) {
+        event.preventDefault();
+        var slider = $(this).attr('data-slider');
+        $(slider).slick('slickPrev');
+    });
+
+    $('.js-slick-next').on('click', function(event) {
+        event.preventDefault();
+        var slider = $(this).attr('data-slider');
+        $(slider).slick('slickNext');
+    });
+
+
+
+
+    $('.thumbnail-slider').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        centerMode: true,
+        focusOnSelect: true,
+        asNavFor: '.photo-slider'
+    })
+
+
+
+    $('.reviews-slider').slick({
+        fade: true,
+        arrows: false,
+        dots: false,
+        autoplay: true
+    })
 
     /*_______ change from/to values __________*/
     $('#exchange').click(function(){
