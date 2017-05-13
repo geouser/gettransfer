@@ -65,70 +65,91 @@
         
         <!-- //////////////////////////////////////////////////////////////////////// -->
 
+
         <section class="section bg-color">
             <div class="wrapper">
 
-                <div class="contact-info-row">
-                    <div class="flex-row">
-                        <div class="col-4">
-                            <p><img src="images/marker-white.svg" alt=""> <span>AZ 1OOO, Azerbaijan, Baku. Ac. Hasan Aliyev 89</span></p>
-                        </div>
-                        <div class="col-4">
-                            <p><img src="images/clock-white.svg" alt=""> <span>Monday - Friday: 9:00 AM to 6:00 PM</span></p>
-                        </div>
-                        <div class="col-4">
-                            <p><img src="images/phone-white.svg" alt=""> <span>(+994 12) 310 11 61, (+994 70) 224 11 61</span></p>
-                        </div>
-                    </div>
-                </div>
+                <form action="" class="regular-form">
+                    <div class="flex-row flex-row-stretch"> 
 
-                <div class="map-block bordered-block">
-                    <div class="flex-row">
-                        <div class="col-8 map-column">
-                            <div class="map" id="map_canvas" data-lat="40.400338" data-lng="49.875745"></div>
-                        </div>
-                        <div class="col-4 image-column">
-                            <div class="bg" style="background-image: url(images/map-column.jpg);"></div>
-                        </div>
-                    </div>
-                </div>
+                        <div class="form-section">
+                            <div class="form-section__header">Enter transfer details</div> <!-- end form-section_header -->
 
-                <div class="contact-form bordered-block">
-                    <div class="flex-row">
-                        <div class="col-4 contact-form__image-column">
-                            <div class="bg" style="background-image: url(images/contact-form.jpg);"></div>
-                        </div>
-                        <div class="col-8 contact-form__form-column">
-                            <form action="" class="question-form">
-                                <div class="flex-row">
-                                    <div class="col-6">
+                            <div class="form-section__body">
+                                <div class="flex-row flex-row-bottom">
+                                    <div class="col-6 form-group-column">
                                         <div class="form-group">
-                                            <label for="">Name, Surname</label>
-                                            <input type="text" name="name" required="">
+                                            <p class="label">Pick up address:</p>
+                                            <span class="input has-icon">
+                                                <img src="images/input-address.svg" alt="">
+                                                <input type="text" name="city-start" placeholder="From:">
+                                            </span>
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 form-group-column">
                                         <div class="form-group">
-                                            <label for="">Email address</label>
-                                            <input type="text" name="email" required="">
+                                            <span class="input has-icon">
+                                                <img src="images/input-address.svg" alt="">
+                                                <input type="text" name="city-start" placeholder="To:">
+                                            </span>
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-group textarea-group">
-                                            <label for="">Message</label>
-                                            <textarea name="message" id=""></textarea>
+                                    <div class="col-12 form-group-column">
+                                        <p class="tip">Pickup address (hotel name or address within city)</p>
+                                    </div>
+                                    <div class="col-6 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Pick up time:</p>
+                                            <span class="input has-icon">
+                                                <img src="images/input-calendar.svg" alt="">
+                                                <input type="text" name="date" placeholder="Date:" class="datepicker">
+                                            </span>
                                         </div>
                                     </div>
-                                    <button class="submit-button"><img src="images/email-white.svg" alt=""></button>
+                                    <div class="col-6 form-group-column">
+                                        <div class="form-group">
+                                            <span class="input has-icon">
+                                                <img src="images/input-time.svg" alt="">
+                                                <input type="text" name="time" placeholder="hh:mm">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 form-group-column">
+                                        <p class="tip">Local time in 24 hour format. Travel time approximately 30 min.</p>
+                                    </div>
+                                    <div class="col-6 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Want to come back?</p>
+                                            <span class="input checkbox">
+                                                <input type="checkbox" id="return-back" name="return-back" value="true">
+                                                <label for="return-back"><span>add return way</span></label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 form-group-column">
+                                        <div class="form-group">
+                                            <p class="label">Number of passengers (including children):</p>
+                                            <span class="input has-icon type-number">
+                                                <img src="images/input-seat.svg" alt="">
+                                                <input type="number" name="passangers" placeholder="Number of passangers:">
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </form>
-                        </div>
+                            </div> <!-- end form-section__body -->
+
+                        </div> <!-- end form-section -->
+
                     </div>
-                </div> <!-- end contact-form -->
+                </form>
 
             </div>
         </section>
 
+
+
+
+        <!-- START FOOTER -->
         <footer class="site-footer stroke stroke--top">
 
             <div class="site-footer__top">

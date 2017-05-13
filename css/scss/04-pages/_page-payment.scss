@@ -1,0 +1,20 @@
+.transfer-header {
+    h1 {
+        font-size: 40px;
+        font-weight: 400;
+        font-family: $rds;
+        color: #444;
+        margin-bottom: 11px;
+
+        span {
+            color: $orange;
+        }
+
+        & + p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $os;
+            margin-bottom: 55px;
+        }
+    }
+}

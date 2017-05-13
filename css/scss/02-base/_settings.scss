@@ -58,6 +58,9 @@ body {
 .bg-color {
   background-color: #f7fafd;
 }
+.bg-gray {
+  background-color: #f8f8f8;
+}
 
 .flex-row {
     @include flex($alignI: flex-start, $justify: flex-start);
@@ -67,6 +70,18 @@ body {
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+
+    &.flex-row-stretch {
+      -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+    }
+
+    &.flex-row-bottom {
+      -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end;
+      align-items: flex-end;
     }
 }
 [class*='col-'] {
@@ -100,4 +115,12 @@ body {
 }
 :-moz-placeholder {
   opacity: 1;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
 }

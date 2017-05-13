@@ -72,6 +72,14 @@ jQuery(document).ready(function($) {
         return false;
     });
 
+    $('.js-scroll-down').on('click', function(event) {
+        event.preventDefault();
+        var target = $(this).parents('.section').next();
+         $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 800);
+    });
+
     /*---------------------------
                                   MENU TOGGLE
     ---------------------------*/
@@ -217,7 +225,7 @@ jQuery(document).ready(function($) {
             icon: markerImage,
             position: mapMarkerCoord, 
             map: map,
-            title:"Чисто Строй"
+            title:"GetTransfer"
         });
         
         $(window).resize(function (){
