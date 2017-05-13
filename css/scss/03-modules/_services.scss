@@ -2,6 +2,14 @@
     .col-3 {
         padding: 0 10px;
     }
+    p {
+        font-family: $rds;
+        font-size: 18px;
+        font-weight: 400;
+        font-weight: 400;
+        text-align: left;
+        color: #444444;
+    }
 }
 .services-preview {
     display: block;
@@ -22,5 +30,8 @@
         font-family: $f;
         text-transform: uppercase;
         line-height: .9;
+    }
+    & + p {
+        margin-top: 20px;
     }
 }
