@@ -144,6 +144,12 @@
 
 .car-slider-nav {
     background-color: #f7fafd;
+    .car-slide-nav {
+        &.slick-current {
+            background-color: #ebf0f5;
+            border-color: $blue;
+        }
+    }
 }
 .car-slide-nav {
     width: 240px;
@@ -187,8 +193,7 @@
         font-weight: 500;
         text-align: center;
     }
-    &:hover,
-    &.slick-current {
+    &:hover {
         background-color: #ebf0f5;
         border-color: $blue;
     }

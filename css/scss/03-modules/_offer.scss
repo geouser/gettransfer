@@ -22,7 +22,7 @@
         font-family: $hn;
         color: #FFF;
     }
-    form {
+    * + form {
         margin-top: 50px;
     }
     &:after {

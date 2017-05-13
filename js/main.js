@@ -25,6 +25,7 @@ function exist(el){
 
 jQuery(document).ready(function($) {
 
+
     /*---------------------------
                               CONTACTS FORM
     ---------------------------*/
@@ -160,6 +161,13 @@ jQuery(document).ready(function($) {
       focusOnSelect: true
     });
 
+    $('.form-filter-results').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true
+    });
 
     /*_______ change from/to values __________*/
     $('#exchange').click(function(){

@@ -5,7 +5,7 @@
     &__group {
         @include flex($justify: flex-start);
         height: 60px;
-        width: 280px;
+        width: 293px;
         background-color: #FFF;
         padding: 0 20px 0 50px;
         border-right: 1px solid #eeeeee;
@@ -122,6 +122,25 @@
     }
 }
 
+.form-filter-results {
+    width: 940px;
+    margin: 10px auto 0;
+    background-color: #ffffff;
+    border-left: 60px solid #ffffff;
+    border-right: 60px solid #ffffff;
+    .slick-prev, .slick-next {
+        height: 100%;
+        background-color: #f7fafd;
+        width: 60px;
+        z-index: 10;
+    }
+    .slick-prev {
+        left: -60px;
+    }
+    .slick-next {
+        right: -60px;
+    }
+}
 
 
 .regular-form {
