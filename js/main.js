@@ -70,6 +70,20 @@ jQuery(document).ready(function($) {
     });
 
 
+
+    /*---------------------------
+                                  Custom accardeon
+    ---------------------------*/
+    $('.js-faq-handler').on('click', function(event) {
+        event.preventDefault();
+        $(this).parent().toggleClass('expanded');
+
+        $('.faq__item').not( $(this).parents() ).removeClass('expanded');
+        $('.faq__item').not( $(this).parents() ).find('.faq__item__content').slideUp();
+        $(this).siblings('.faq__item__content').slideToggle();
+    });
+
+
     /*---------------------------
                                   ADD CLASS ON SCROLL
     ---------------------------*/
