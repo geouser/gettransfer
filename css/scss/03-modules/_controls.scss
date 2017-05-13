@@ -17,6 +17,14 @@
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+        position: relative;
+        top: -4px;
+    }
 
     &:hover {
         background-color: $orange-hover;

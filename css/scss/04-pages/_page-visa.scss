@@ -1,0 +1,38 @@
+.countries-list {
+    column-count: 6;
+    column-gap: 60px;
+    list-style-type: none;
+    color: #FFF;
+    text-align: left;
+    counter-reset: list;
+    li {
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 12px;
+        &:before {
+            counter-increment: list;
+            content:counter(list) ".";
+            display: inline-block;
+            margin-right: 6px;
+        }
+    }
+    & + .button {
+        margin-top: 70px;
+    }
+    &--dark {
+        color: $text;
+    }
+    &--small {
+        column-count: auto;
+        height: 500px;
+        max-height: 100%;
+        overflow: auto;
+        position: relative;
+    }
+}
+
+#all-countries {
+    padding: 40px;
+    width: 300px;
+}

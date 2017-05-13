@@ -25,6 +25,7 @@
             font-weight: 400;
             font-family: $rds;
             margin-bottom: 20px;
+            line-height: normal;
         }
 
         p:not(:last-child) {
@@ -38,6 +39,19 @@
         img {
             display: inline-block;
             max-width: 100%;
+        }
+    }
+
+    &.blue {
+        h2 {
+            color: $blue;
+        }
+        .button {
+            background-color: $blue;
+
+            &:hover {
+                background-color: $blue-hover;
+            }
         }
     }
 }
