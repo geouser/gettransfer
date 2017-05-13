@@ -368,6 +368,7 @@
 
                 span {
                     @include input();
+                    @include textEnd();
                     line-height: 62px;
                     padding-right: 50px;
                     color: #888;
