@@ -311,3 +311,48 @@
         }
     }
 }
+
+.vehical-short-info {
+    padding: 22px;
+    margin: 35px 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px #e9eef3;
+    i {
+        font-style: normal;
+    }
+    &__luggage:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 23px;
+        height: 24px;
+        text-align: left;
+        background-repeat: no-repeat;
+        background-image: url(../images/luggage.svg);
+        margin-right: 12px;
+    }
+    &__passengers:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 23px;
+        height: 24px;
+        text-align: left;
+        background-repeat: no-repeat;
+        background-image: url(../images/passengers.svg);
+        margin-right: 12px;
+    }
+    &__price {
+        color: #444444;
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: $f;
+    }
+    .flex-row {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
