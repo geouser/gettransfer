@@ -1,6 +1,6 @@
 .offer {
     height: 620px;
-    max-height: 400px;
+    max-height: 440px;
     position: relative;
     @include flex($direction: column, $alignI: center, $justify: center);
     
@@ -60,7 +60,7 @@
 
     &--small {
         height: 400px;
-        max-height: 350px;
+        max-height: 380px;
     }
     &--controls {
         padding-bottom: 100px;
@@ -126,9 +126,6 @@
     position: absolute;
     width: 100%;
     display: block;
-    @media (max-width: 600px) {
-        height: 500px;
-    }
     .slick-track,
     .slick-list {
         height: 100%;
