@@ -1,15 +1,46 @@
 .about-sliders {
     position: relative;
+
+    @media (max-width: 991px) {
+        .col-5,
+        .col-7 {
+            width: 100%;
+        }
+    }
 }
+
+
+
+
 
 .about-devider {
     margin: 80px 0;
     border: 0;
     border-top: 1px solid #eee;
+
+    @media (max-width: 991px) {
+        margin: 50px 0;
+    }
 }
 
 .about-text {
     margin-bottom: 120px;
+
+    .flex-row {
+        @media (max-width: 1200px) {
+            -webkit-align-items: flex-start;
+            -ms-flex-align: flex-start;
+            align-items: flex-start;
+        }
+    }
+
+    @media (max-width: 991px) {
+        margin-bottom: 50px;
+
+        .about-column {
+            width: 100%;
+        }
+    }
 
     .about-article {
         text-align: left;
@@ -18,6 +49,7 @@
         font-weight: 400;
         line-height: 25px;
         color: #222;
+        padding-bottom: 50px;
         
         &--short {
             padding-right: 25%;    
@@ -30,6 +62,15 @@
             font-family: $rds;
             margin-bottom: 20px;
             line-height: normal;
+
+            @media (max-width: 991px) {
+                text-align: center;
+                font-size: 36px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 30px;
+            }
         }
 
         p:not(:last-child) {
@@ -39,6 +80,10 @@
 
     .image-column {
         text-align: right;
+
+        @media (max-width: 991px) {
+            text-align: center;
+        }
 
         img {
             display: inline-block;
@@ -66,6 +111,10 @@
 .photo-slider {
     width: 100%;
 
+    @media (max-width: 991px) {
+        margin-bottom: 15px;
+    }
+
     .slide {
         img {
             display: block;
@@ -75,6 +124,13 @@
 
     &-wrap {
         position: relative;
+
+        @media (max-width: 991px) {
+            width: 580px;
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
 
         .slider-controls {
             position: absolute;
@@ -165,8 +221,22 @@
     width: 100%;
     margin-bottom: -2px;
 
+    @media (max-width: 991px) {
+        width: 580px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
     .slide {
         padding: 2px 10px;
+
+        @media (max-width: 991px) {
+            padding: 2px 5px;
+        }
+
+        @media (max-width: 600px) {
+            padding: 2px;
+        }
 
         img {
             display: block;
@@ -189,6 +259,16 @@
     right: 0;
     width: 530px;
     max-width: 100%;
+
+    @media (max-width: 991px) {
+        position: static;
+        margin-top: 50px;
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-width: 100%;
+    }
 }
 
 .slide-review {
@@ -240,6 +320,20 @@
         -o-column-gap: 120px;
         column-gap: 120px;
 
+        @media (max-width: 991px) {
+            -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+            -o-column-gap: 20px;
+            column-gap: 20px;
+        }
+
+        @media (max-width: 767px) {
+            -webkit-columns: 1;
+            -moz-columns: 1;
+            -o-columns: 1;
+            columns: 1;
+        }
+
         p {
             margin-bottom: 25px;
         }
@@ -255,12 +349,31 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
 
+    @media (max-width: 991px) {
+        padding: 150px 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 100px 0;
+    }
+    @media (max-width: 600px) {
+        padding: 75px 0;
+    }
+
     h2 {
         font-size: 40px;
         font-weight: 400;
         font-family: $rds;
         color: #fff;
         margin-bottom: 15px;
+
+        @media (max-width: 991px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }
     }
 
     p {
@@ -269,5 +382,12 @@
         font-weight: 400;
         margin-bottom: 70px;
         color: #fff;
+
+        @media (max-width: 991px) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 40px;
+        }
     }
 }
