@@ -83,12 +83,14 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        max-width: 32%;
     }
 
     .adv-3 {
         position: absolute;
         bottom: 0;
         left: 0;
+        max-width: 32%;
     }
 
     @media (max-width: 991px) {
