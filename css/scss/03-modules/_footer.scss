@@ -9,6 +9,22 @@
 
     &__top {
         padding: 60px 0 35px;
+
+        @media (max-width: 1200px) {
+            .col-5 {
+                width: 100%;
+            }
+
+            .col-7 {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .col-4 {
+                width: 50%;
+            }
+        }
     }
 
 
@@ -17,16 +33,37 @@
         border-top: 1px solid #333;
         font-size: 15px;
 
+        @media (max-width: 1200px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            padding-bottom: 20px;
+            font-size: 13px;
+        }
+
         .copyright {
             text-align: left;
 
+            @media (max-width: 600px) {
+                width: 50%;
+            }
+
             .orange {
-                color: $orange
+                color: $orange;
+
+                @media (max-width: 991px) {
+                    display: block;
+                }
             }
         }
 
         .email {
             text-align: right;
+
+            @media (max-width: 600px) {
+                width: 50%;
+            }
 
             a {
                 color: $orange;
@@ -38,6 +75,20 @@
             img {
                 display: inline-block;
                 vertical-align: middle;
+
+                @media (max-width: 600px) {
+                    width: 10px;
+                }
+            }
+        }
+
+        .studio {
+            @media (max-width: 600px) {
+                width: 100%;
+                padding-top: 20px;
+                -webkit-order: 3;
+                -ms-flex-order: 3;
+                order: 3;
             }
         }
     }
@@ -50,6 +101,23 @@
     display: block;
     max-width: 360px;
     font-size: 15px;
+
+    @media (max-width: 1200px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+        margin: 25px 0;
+    }
+
+    &.about-widget {
+        @media (max-width: 1200px) {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            margin-top: 0;
+        }
+    }
 
     &__title {
         font-family: $f;
@@ -67,10 +135,18 @@
     }
 
     .socials {
+        @media (max-width: 1200px) {
+            text-align: center;
+        }
+
         a {
             display: inline-block;
             vertical-align: middle;
             margin-right: 50px;
+
+            @media (max-width: 1200px) {
+                margin: 0 15px;
+            }
         }
     }
 }
