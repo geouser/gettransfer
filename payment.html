@@ -83,7 +83,8 @@
                             <div class="form-section__header">Enter transfer details</div> <!-- end form-section_header -->
 
                             <div class="form-section__body">
-                                <div class="flex-row flex-row-bottom">
+                            
+                                <div class="flex-row">
                                     <div class="col-6 form-group-column">
                                         <div class="form-group">
                                             <p class="label">Pick up address:</p>
@@ -95,6 +96,7 @@
                                     </div>
                                     <div class="col-6 form-group-column">
                                         <div class="form-group">
+                                            <p class="label empty">&nbsp;</p>
                                             <span class="input has-icon">
                                                 <img src="images/input-address.svg" alt="">
                                                 <input type="text" name="city-start" placeholder="To:">
@@ -115,6 +117,7 @@
                                     </div>
                                     <div class="col-6 form-group-column">
                                         <div class="form-group">
+                                            <p class="label empty">&nbsp;</p>
                                             <span class="input has-icon">
                                                 <img src="images/input-time.svg" alt="">
                                                 <input type="text" name="time" placeholder="hh:mm">
@@ -159,7 +162,7 @@
                             <div class="form-section__header">Personal Information</div> <!-- end form-section_header -->
 
                             <div class="form-section__body">
-                                <div class="flex-row flex-row-bottom">
+                                <div class="flex-row">
                                     <div class="col-6 form-group-column">
                                         <div class="form-group">
                                             <p class="label">Name & Surname:</p>
@@ -171,6 +174,7 @@
                                     </div>
                                     <div class="col-6 form-group-column">
                                         <div class="form-group">
+                                            <p class="label empty">&nbsp;</p>
                                             <span class="input has-icon">
                                                 <img src="images/input-person.svg" alt="">
                                                 <input type="text" name="surname" placeholder="Surname">
@@ -216,7 +220,7 @@
                             <div class="form-section__header">CHOOSE YOUR CAR</div> <!-- end form-section_header -->
 
                             <div class="form-section__body">
-                                <div class="flex-row flex-row-bottom">
+                                <div class="flex-row">
                                     <div class="col-6 form-group-column">
                                         <div class="form-group">
                                             <p class="label">Child seat (Chair 9-18kg)</p>
@@ -262,6 +266,15 @@
                                                     <span class="car-text">Luggage: <br>2-3</span>
                                                 </label>
                                             </div>
+                                            <div class="car-group radio-group">
+                                                <input type="radio" name="car" value="Volkswagen Passat B5" id="car-radio-2">
+                                                <label for="car-radio-2">
+                                                    <span class="car-preview"><img src="images/car-preview.png" alt=""></span>
+                                                    <span class="car-text">Class: <br>Standart</span>
+                                                    <span class="car-text">Passengers: <br>3-4</span>
+                                                    <span class="car-text">Luggage: <br>2-3</span>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -274,7 +287,7 @@
                             <div class="form-section__header">Payment & Total price</div> <!-- end form-section_header -->
 
                             <div class="form-section__body">
-                                <div class="flex-row flex-row-bottom">
+                                <div class="flex-row">
                                     <div class="col-6 form-group-column">
                                         <div class="form-group">
                                             <p class="label">Payable with:</p>
@@ -289,6 +302,7 @@
                                     </div>
                                     <div class="col-6 form-group-column">
                                         <div class="form-group">
+                                            <p class="label empty">&nbsp;</p>
                                             <span class="input input-pay">
                                                 <input type="radio" name="payment-method" value="Pay cash to driver" id="payment-method-2">
                                                 <label for="payment-method-2">
@@ -296,7 +310,6 @@
                                                 </label>
                                             </span>
                                         </div>
-                                        <p class="tip empty">&nbsp;</p>
                                     </div>
 
                                     <hr class="col-12 form-group-devider">
