@@ -12,6 +12,15 @@ body {
 
 .section-title {
   margin-bottom: 70px;
+  @media (max-width: 1500px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 1000px) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 30px;
+  }
   h2,
   h1 {
     color: $blue;

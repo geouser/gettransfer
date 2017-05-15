@@ -270,7 +270,33 @@ jQuery(document).ready(function($) {
       asNavFor: '.car-slider',
       dots: false,
       centerMode: false,
-      focusOnSelect: true
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 1350,
+          settings: {
+            slidesToShow: 6
+          }
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
 
     $('.form-filter-results').slick({

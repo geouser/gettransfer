@@ -1,6 +1,17 @@
 .services-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width: 1460px) {
+        margin: 0 auto;
+    }
     .col-3 {
         padding: 0 10px;
+        min-width: 350px;
+        padding: 10px;
+        max-width: 100%;
+        @media (max-width: 400px) {
+            min-width: 300px;
+        }
     }
     p {
         font-family: $rds;
@@ -20,6 +31,9 @@
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
+    @media (max-width: 400px) {
+        height: 140px;
+    }
     span {
         display: block;
         position: absolute;

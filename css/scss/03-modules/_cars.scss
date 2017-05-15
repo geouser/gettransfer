@@ -1,13 +1,25 @@
 .car-slider {
     margin-top: 80px;
+    @media (max-width: 1300px) {
+        margin-top: 20px;
+    }
 }
 .car-slide {
     opacity: 1;
     margin-bottom: 130px;
     padding-top: 40px;
+    @media (max-width: 1300px) {
+        margin-bottom: 20px;
+    }
+    @media (max-width: 600px) {
+        padding-top: 0;
+    }
     .wrapper {
         @include flex();
         position: relative;
+        @media (max-width: 1300px) {
+            justify-content: center;
+        }
     }
     .car-cat {
         position: absolute;
@@ -21,12 +33,18 @@
             -ms-transition: .4s transform .0s, .2s opacity;
              -o-transition: .4s transform .0s, .2s opacity;
                 transition: .4s transform .0s, .2s opacity;
+        @media (max-width: 600px) {
+            top: 0px;
+        }
     }
     .car-img {
+        width: -webkit-calc(100% - 340px);
+        width: calc(100% - 340px);
         opacity: 0;
         padding-top: 70px;
         position: relative;
         z-index: 2;
+        text-align: center;
         -webkit-transition: .4s transform 0s, .4s opacity 0s;
            -moz-transition: .4s transform 0s, .4s opacity 0s;
             -ms-transition: .4s translform 0s, .4s opacity 0s;
@@ -39,6 +57,12 @@
                 transform: translateX(-100%);
         img {
             display: block;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        @media (max-width: 1300px) {
+            width: 100%;
+            margin-bottom: 20px;
         }
     }
     &.slick-current {
@@ -63,6 +87,10 @@
             -ms-transition: .6s all .2s ease-out;
              -o-transition: .6s all .2s ease-out;
                 transition: .6s all .2s ease-out;
+            @media (max-width: 1500px) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
         & + .slick-slider {
             .car-img {
@@ -83,11 +111,15 @@
 
 .car-info {
     width: 340px;
+    max-width: 100%;
     position: relative;
     z-index: 2;
     ul {
         background-color: #3498db;
         padding: 35px 20px;
+        @media (max-width: 600px) {
+            padding: 20px 15px;
+        }
         li {
             display: block;
             margin-bottom: 30px;
@@ -97,6 +129,10 @@
             color: #ffffff;
             text-align: left;
             line-height: 22px;
+            @media (max-width: 600px) {
+                margin-bottom: 15px;
+                font-size: 14px;
+            }
             &:last-of-type {
                 margin-bottom: 0;
             }
@@ -134,11 +170,32 @@
         }
     }
 }
+
+
 .car-cat {
     color: #f7fafd;
     text-transform: uppercase;
     font-size: 250px;
     font-weight: 700;
+    @media (max-width: 1500px) {
+      font-size: 220px;
+    }
+    @media (max-width: 1300px) {
+      font-size: 200px;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 180px;
+    }
+    @media (max-width: 760px) {
+      font-size: 140px;
+    }
+    @media (max-width: 600px) {
+      font-size: 100px;
+    }
+    @media (max-width: 500px) {
+      font-size: 80px;
+    }
 }
 
 
@@ -150,6 +207,19 @@
             border-color: $blue;
         }
     }
+    .slick-next,
+    .slick-next:hover,
+    .slick-next:focus {
+        right: 0px;
+        background-image: url("../images/arrow-next.svg");
+    }
+    .slick-prev,
+    .slick-prev:hover,
+    .slick-prev:focus {
+        left: 0px;
+        background-image: url("../images/arrow-prev.svg");
+    }
+
 }
 .car-slide-nav {
     width: 240px;
