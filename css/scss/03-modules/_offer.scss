@@ -1,6 +1,6 @@
 .offer {
     height: 620px;
-    max-height: 100%;
+    max-height: 400px;
     position: relative;
     @include flex($direction: column, $alignI: center, $justify: center);
     
@@ -16,14 +16,32 @@
         color: #ffffff;
         font-family: $rds;
         font-weight: 400;
+        @media (max-width: 1200px) {
+          font-size: 36px;
+        }
+        @media (max-width: 992px) {
+          font-size: 32px;
+        }
+        @media (max-width: 600px) {
+          font-size: 26px;
+        }
     }
     p {
         font-size: 16px;
         font-family: $hn;
         color: #FFF;
+        @media (max-width: 992px) {
+          font-size: 14px;
+        }
+        @media (max-width: 600px) {
+          font-size: 13px;
+        }
     }
     * + form {
         margin-top: 50px;
+        @media (max-width: 992px) {
+            margin-top: 20px;
+        }
     }
     &:after {
         display: block;
@@ -42,6 +60,7 @@
 
     &--small {
         height: 400px;
+        max-height: 350px;
     }
     &--controls {
         padding-bottom: 100px;
