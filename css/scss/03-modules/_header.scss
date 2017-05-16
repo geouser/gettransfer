@@ -9,14 +9,14 @@
     .wrapper {
         height: 100%;
         @include flex();
-        @media (max-width: 800px) {
+        @media (max-width: 840px) {
             display: inline-block;
         }
     }
     @media (max-width: 1500px) {
         height: 80px;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 840px) {
         @include transition(all, .4s);
         position: fixed;
         height: 100%;
@@ -44,9 +44,9 @@
     &__right {
         width: 300px;
         @media (max-width: 1500px) {
-            max-width: 220px;
+            max-width: 230px;
         }
-        @media (max-width: 800px) {
+        @media (max-width: 840px) {
             width: 100%;
             max-width: 100%;
             text-align: center;
@@ -54,13 +54,13 @@
     }
     &__left {
         text-align: left;
-        @media (max-width: 800px) {
+        @media (max-width: 840px) {
             text-align: center;
         }
     }
     &__right {
         text-align: right;
-        @media (max-width: 800px) {
+        @media (max-width: 840px) {
             text-align: center;
         }
     }
@@ -164,7 +164,7 @@
 }
 
 .logo {
-    @media (max-width: 800px) {
+    @media (max-width: 840px) {
         display: block;
         margin: 0 auto 20px;
         width: 150px;
@@ -177,7 +177,7 @@
 /* ------------------------------------ */
 /*  NAV STYLES  */
 .mainNav {
-    @media (max-width: 800px) {
+    @media (max-width: 840px) {
         margin-bottom: 20px;
     }
     ul {
@@ -185,7 +185,7 @@
         li {
             display: inline-block;
             vertical-align: middle;
-            @media (max-width: 800px) {
+            @media (max-width: 840px) {
                 display: block;
                 margin: 10px auto;
                 text-align: center;
@@ -206,7 +206,7 @@
                 @media (max-width: 1000px) {
                     margin: 0 10px;
                 }
-                @media (max-width: 800px) {
+                @media (max-width: 840px) {
                     display: none;
                 }
             }
@@ -353,7 +353,7 @@
     &.active .middle_line  {   width: 0; left: 50%;}
 
 
-        @media (max-width: 800px) {
+        @media (max-width: 840px) {
             display: block;
         }
 

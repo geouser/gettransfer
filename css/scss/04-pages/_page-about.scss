@@ -53,6 +53,12 @@
         
         &--short {
             padding-right: 25%;    
+            @media (max-width: 1300px) {
+                padding-right: 15%;
+            }
+            @media (max-width: 991px) {
+                padding-right: 0;
+            }
         }
 
         h2 {

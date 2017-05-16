@@ -438,8 +438,19 @@
     margin: 35px 0;
     background-color: #ffffff;
     box-shadow: 0 0 15px #e9eef3;
+    @media (max-width: 500px) {
+        padding: 18px 12px;
+    }
+    @media (max-width: 360px) {
+        font-size: 14px;
+    }
     i {
         font-style: normal;
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
     }
     &__luggage:before {
         content: "";
@@ -451,6 +462,10 @@
         background-repeat: no-repeat;
         background-image: url(../images/luggage.svg);
         margin-right: 12px;
+        @media (max-width: 360px) {
+            margin-right: 6px;
+            background-position: center center;
+        }
     }
     &__passengers:before {
         content: "";
@@ -462,6 +477,10 @@
         background-repeat: no-repeat;
         background-image: url(../images/passengers.svg);
         margin-right: 12px;
+        @media (max-width: 360px) {
+            margin-right: 6px;
+            background-position: center center;
+        }
     }
     &__price {
         color: #444444;
@@ -469,6 +488,12 @@
         font-weight: 500;
         text-transform: uppercase;
         font-family: $f;
+        @media (max-width: 500px) {
+            font-size: 24px;
+        }
+        @media (max-width: 360px) {
+            font-size: 20px;
+        }
     }
     .flex-row {
         margin-bottom: 10px;
