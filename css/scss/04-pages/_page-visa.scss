@@ -5,11 +5,32 @@
     color: #FFF;
     text-align: left;
     counter-reset: list;
+    @media (max-width: 1100px) {
+        column-count: 5;
+        padding: 0 20px;
+    }
+    @media (max-width: 900px) {
+        column-count: 4;
+    }
+    @media (max-width: 700px) {
+        column-count: 3;
+        column-gap: 40px;
+    }
+    @media (max-width: 600px) {
+        column-count: 2;
+    }
+    @media (max-width: 340px) {
+        column-count: auto;
+    }
     li {
         display: block;
         font-size: 15px;
         font-weight: 400;
         margin-bottom: 12px;
+        @media (max-width: 1300px) {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
         &:before {
             counter-increment: list;
             content:counter(list) ".";
@@ -19,6 +40,12 @@
     }
     & + .button {
         margin-top: 70px;
+        @media (max-width: 1200px) {
+            margin-top: 50px;
+        }
+        @media (max-width: 700px) {
+            margin-top: 30px;
+        }
     }
     &--dark {
         color: $text;

@@ -13,6 +13,20 @@
             min-width: 300px;
         }
     }
+    .col-4 {
+        padding: 0 10px;
+        padding: 10px;
+        max-width: 100%;
+        min-width: 400px;
+        @media (max-width: 500px) {
+            min-width: 300px;
+        }
+        .services-preview {
+            @media (max-width: 500px) {
+                height: 120px;
+            }
+        }
+    }
     p {
         font-family: $rds;
         font-size: 18px;
@@ -20,6 +34,12 @@
         font-weight: 400;
         text-align: left;
         color: #444444;
+        @media (max-width: 1300px) {
+            font-size: 16px;
+        }
+        @media (max-width: 600px) {
+            font-size: 14px;
+        }
     }
 }
 .services-preview {
@@ -44,8 +64,14 @@
         font-family: $f;
         text-transform: uppercase;
         line-height: .9;
+        @media (max-width: 1300px) {
+            font-size: 22px;
+        }
     }
     & + p {
         margin-top: 20px;
+        @media (max-width: 600px) {
+            margin-top: 10px;
+        }
     }
 }

@@ -272,6 +272,15 @@
 
 // cars car. transfers page
 
+.transfers-options {
+    justify-content: center;
+    > .col-4 {
+        min-width: 420px;
+        @media (max-width: 900px) {
+            min-width: 310px;
+        }
+    }
+}
 .car-card {
     padding: 30px;
     display: block;
@@ -280,6 +289,9 @@
     transition: all .2s;
     color: #222;
     margin: 8px 0;
+    @media (max-width: 900px) {
+        padding: 14px 12px;
+    }
     p,
     small,
     span,
@@ -288,6 +300,11 @@
         filter: grayscale(100%);
         opacity: .6;
         transition: all .2s;
+        @media (max-width: 900px) {
+            -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+            opacity: 1;
+        }
     }
     &:hover {
         box-shadow: 0 0 15px #b4bfc9;
@@ -307,12 +324,18 @@
         }
         & > *:last-of-type {
             text-align: right;
+            @media (max-width: 900px) {
+                text-align: left;
+            }
         }
     }
     &__img {
         height: 75px;
         text-align: center;
         margin: 10px auto 20px;
+        @media (max-width: 900px) {
+            margin: 10px auto 10px;
+        }
         &:before {
             content: "";
             display: inline-block;
@@ -333,12 +356,25 @@
         -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
         filter: grayscale(0%) !important;
         opacity: 1 !important;
+        @media (max-width: 900px) {
+            margin-bottom: 10px;
+        }
     }
     &__capacity {
         border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
         padding: 20px 0;
         font-size: 15px;
+        @media (max-width: 1400px) {
+            font-size: 14px;
+        }
+        @media (max-width: 900px) {
+            padding: 4px 0;
+            .col-6 {
+                width: 100%;
+                margin: 4px 0;
+            }
+        }
         i {
             font-style: normal;
         }
@@ -353,6 +389,12 @@
                 background-repeat: no-repeat;
                 background-image: url("../images/luggage.svg");
                 margin-right: 12px;
+                @media (max-width: 1400px) {
+                    margin-right: 6px;
+                }
+                @media (max-width: 900px) {
+                    background-position: 50% 50%;
+                }
             }
         }
         &__passengers {
@@ -366,6 +408,9 @@
                 background-repeat: no-repeat;
                 background-image: url("../images/passengers.svg");
                 margin-right: 12px;
+                @media (max-width: 1400px) {
+                    margin-right: 6px;
+                }
             }
         }
     }
@@ -373,11 +418,17 @@
         padding: 20px 0 0;
         font-size: 22px;
         font-family: $f;
+        @media (max-width: 900px) {
+            font-size: 16px;
+        }
         em {
             font-size: 30px;
             text-transform: uppercase;
             color: #0aa4e0;
             font-style: normal;
+            @media (max-width: 900px) {
+                font-size: 26px;
+            }
         }
     }
 }
