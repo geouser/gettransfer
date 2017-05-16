@@ -304,7 +304,27 @@ jQuery(document).ready(function($) {
       slidesToScroll: 1,
       dots: false,
       centerMode: false,
-      focusOnSelect: true
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 460,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
 
 
