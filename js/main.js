@@ -299,6 +299,11 @@ jQuery(document).ready(function($) {
       ]
     });
 
+    $('.form-filter-results').on('init', function(event, slick) {
+        event.preventDefault();
+        $(this).addClass('active');
+    });
+
     $('.form-filter-results').slick({
       slidesToShow: 4,
       slidesToScroll: 1,

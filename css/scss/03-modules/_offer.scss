@@ -112,6 +112,15 @@
             }
         }
     }
+
+
+    &.no-padding {
+        padding-bottom: 0;
+
+        .form-filter {
+            z-index: 5;
+        }
+    }
 }
 
 .search-button {

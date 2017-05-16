@@ -163,6 +163,19 @@
     background-color: #ffffff;
     border-left: 60px solid #ffffff;
     border-right: 60px solid #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 
