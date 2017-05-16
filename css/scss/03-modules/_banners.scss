@@ -1,3 +1,16 @@
+.banners-list {
+    @media (max-width: 700px) {
+        .col-3 {
+            width: 50%;
+            margin: 20px 0;
+        }
+    }
+    @media (max-width: 400px) {
+        .col-3 {
+            width: 100%;
+        }
+    }
+}
 .banner-info {
     @include flex($direction: column, $alignI: center, $justify: center);
     height: 620px;
@@ -6,13 +19,38 @@
          -o-background-size: cover;
             background-size: cover;
     color: #FFF;
+    @media (max-width: 1500px) {
+        height: 520px;
+    }
+    @media (max-width: 1200px) {
+        height:auto;
+        padding: 100px 0;
+    }
+    @media (max-width: 700px) {
+        padding: 40px 0;
+    }
     &-piece {
         text-align: left;
         display: inline-block;
+        @media (max-width: 700px) {
+            text-align: center;
+        }
         strong {
             display: block;
             font: 70px $rds;
             line-height: 1;
+            @media (max-width: 1500px) {
+                font-size: 62px;
+            }
+            @media (max-width: 1200px) {
+                font-size: 50px;
+            }
+            @media (max-width: 900px) {
+                font-size: 40px;
+            }
+            @media (max-width: 500px) {
+                font-size: 32px;
+            }
         }
         span {
             display: block;
@@ -20,6 +58,15 @@
             font-family: $f;
             text-transform: uppercase;
             font-weight: 500;
+            @media (max-width: 1200px) {
+                font-size: 22px;
+            }
+            @media (max-width: 900px) {
+                font-size: 18px;
+            }
+            @media (max-width: 500px) {
+                font-size: 16px;
+            }
         }
     }
     .col-3 {
@@ -27,9 +74,15 @@
     }
     .col-3:nth-of-type(1) {
         text-align: left;
+        @media (max-width: 1500px) {
+            text-align: center;
+        }
     }
     .col-3:nth-of-type(4) {
         text-align: right;
+        @media (max-width: 1500px) {
+            text-align: center;
+        }
     }
 }
 
@@ -39,4 +92,8 @@
     background: #FFF;
     width: 70px;
     margin: 20px 0;
+    @media (max-width: 700px) {
+        margin: 10px auto;
+        width: 40px;
+    }
 }

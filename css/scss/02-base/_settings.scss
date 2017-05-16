@@ -92,6 +92,9 @@ body {
 .flex-row {
     @include flex($alignI: flex-start, $justify: flex-start);
     margin: 0 -10px;
+    &.nm {
+      margin: 0 auto;
+    } 
 
     &.flex-row-middle {
         -webkit-align-items: center;
