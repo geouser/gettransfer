@@ -309,6 +309,7 @@ jQuery(document).ready(function($) {
       slidesToScroll: 1,
       dots: false,
       centerMode: false,
+      autoplay: true,
       focusOnSelect: true,
       responsive: [
         {
@@ -396,6 +397,21 @@ jQuery(document).ready(function($) {
         el2.val(val1);
     });
 
+    inputInfo = {};
+    $('#selected-car-field').val(inputInfo);
+
+    $('.form-filter-results .car-slide-nav').click(function(){
+        var info = $(this).data('info');
+        var name = $(this).find('p').text();
+        $(this).toggleClass('selected');
+        if ($(this).hasClass('selected')) {
+            inputInfo[name] = info;
+        } else {
+            delete inputInfo[name];
+        }
+        $('.form-filter-results').slick('slickPause');
+    });
+
     /*---------------------------
                                   Fancybox
     ---------------------------*/
@@ -479,7 +495,7 @@ jQuery(document).ready(function($) {
         };
 
         map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-        var markerImage = new google.maps.MarkerImage('images/location.svg');
+        var markerImage = new google.maps.MarkerImage(THEMEPATH + 'img/location.svg');
         var marker = new google.maps.Marker({
             icon: markerImage,
             position: mapMarkerCoord, 
