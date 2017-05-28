@@ -10,7 +10,7 @@
         height: 60px;
         width: 293px;
         background-color: #FFF;
-        padding: 0 20px 0 50px;
+        
         border-right: 1px solid #eeeeee;
         position: relative;
         @media (max-width: 992px) {
@@ -25,6 +25,9 @@
         input {
             width: 100%;
             padding-left: 2px;
+            height: 100%;
+            padding: 0 20px 0 50px;
+            background-color: transparent;
         }
         &:first-of-type {
             border-radius: 2px 2px 0 0px;
