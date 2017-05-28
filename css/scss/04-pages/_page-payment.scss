@@ -5,7 +5,9 @@
         font-family: $rds;
         color: #444;
         margin-bottom: 11px;
-
+     @media (max-width: 600px) {
+         font-size: 32px;
+     }
         span {
             color: $orange;
         }

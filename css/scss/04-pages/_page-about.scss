@@ -24,8 +24,12 @@
 }
 
 .about-text {
-    margin-bottom: 120px;
-
+    margin-bottom: 80px;
+    border-bottom: 2px solid #E0E1E1;
+    padding-bottom: 40px;
+    &:last-child {
+        border: none;
+    }
     .flex-row {
         @media (max-width: 1200px) {
             -webkit-align-items: flex-start;

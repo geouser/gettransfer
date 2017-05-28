@@ -1,6 +1,6 @@
 .offer {
     height: 620px;
-    max-height: 440px;
+    max-height: 460px;
     position: relative;
     @include flex($direction: column, $alignI: center, $justify: center);
     padding-left: 15px;
@@ -11,7 +11,7 @@
          -o-background-size: cover;
             background-size: cover;
     
-    * {
+    & > * {
         max-width: 100%;
     }
     h1 {
