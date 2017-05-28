@@ -442,8 +442,12 @@
     @media (max-width: 500px) {
         padding: 18px 12px;
     }
-    @media (max-width: 360px) {
+    @media (max-width: 500px) {
         font-size: 14px;
+        line-height: 1.4;
+    }
+    @media (max-width: 360px) {
+        font-size: 12px;
     }
     i {
         font-style: normal;
@@ -466,6 +470,9 @@
         @media (max-width: 360px) {
             margin-right: 6px;
             background-position: center center;
+            width: 18px;
+            height: 19px;
+            background-size: auto 100%;
         }
     }
     &__passengers:before {
@@ -481,6 +488,9 @@
         @media (max-width: 360px) {
             margin-right: 6px;
             background-position: center center;
+            width: 18px;
+            height: 19px;
+            background-size: auto 100%;
         }
     }
     &__price {
@@ -498,6 +508,12 @@
     }
     .flex-row {
         margin-bottom: 10px;
+        .vehical-short-info__price,
+        .col-3 {
+            @media (max-width: 500px) {
+                padding-left: 0;
+            }
+        }
         &:last-child {
             margin-bottom: 0;
         }

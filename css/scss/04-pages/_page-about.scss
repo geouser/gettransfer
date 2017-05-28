@@ -51,6 +51,10 @@
         color: #222;
         padding-bottom: 50px;
         
+        @media (max-width: 600px) {
+            font-size: 14px;
+          }
+        
         &--short {
             padding-right: 25%;    
             @media (max-width: 1300px) {
@@ -76,6 +80,14 @@
 
             @media (max-width: 767px) {
                 font-size: 30px;
+            }
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
             }
         }
 

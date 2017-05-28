@@ -3,13 +3,17 @@
     max-height: 440px;
     position: relative;
     @include flex($direction: column, $alignI: center, $justify: center);
-    
+    padding-left: 15px;
+    padding-right: 15px;
     background-image: url("../images/offer-main.jpg");
     background-position: 50% 50%;
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
     
+    * {
+        max-width: 100%;
+    }
     h1 {
         margin-bottom: 10px;
         font-size: 40px;
