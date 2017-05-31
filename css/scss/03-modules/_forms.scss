@@ -525,6 +525,13 @@
 
                 &__value {
                     display: inline-block;
+                    > div {
+                        display: inline-block;
+                        vertical-align: middle;
+                        &:last-child {
+                            font-size: 16px;
+                        }
+                    }
                 }
 
                 &.transfer-price {
